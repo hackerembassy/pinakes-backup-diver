@@ -10,6 +10,6 @@ MARIADB_USER=${MARIADB_USER:-user}
 MARIADB_PASSWORD=${MARIADB_PASSWORD:-user}
 
 PODMAN_COMPOSE_WARNING_LOGS=false \
-exec podman compose -f "$COMPOSE_FILE" exec \
+exec podman compose -f "$COMPOSE_FILE" exec -T \
   -e MYSQL_PWD="$MARIADB_PASSWORD" \
   "$MARIADB_SERVICE" mariadb -u "$MARIADB_USER" --database="$MARIADB_DATABASE" "$@"
