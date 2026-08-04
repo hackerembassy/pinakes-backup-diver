@@ -22,7 +22,6 @@ Local scratch space for researching Pinakes MariaDB backups.
 ```sh
 ./mariadb.sh -e "DESCRIBE table_name;"
 ./mariadb.sh < research.sql
-./mariadb.sh
 ```
 
 ## Replacing the Backup
