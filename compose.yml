@@ -1,6 +1,6 @@
 services:
   db:
-    image: docker.io/library/mariadb:11.4
+    image: docker.io/library/mariadb:11
     container_name: pinakes-mariadb
     restart: unless-stopped
     environment:

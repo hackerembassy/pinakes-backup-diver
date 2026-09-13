@@ -8,6 +8,7 @@ Local scratch space for researching Pinakes MariaDB backups.
 2. Start MariaDB:
 
    ```sh
+   chmod 644 database.sql
    podman compose up -d
    ```
 
